@@ -40,7 +40,7 @@ export default defineComponent({
   methods: {
     async sendText(): Promise<void> {
       try {
-        const response = await fetch("https://localhost:7006/AskTheDatabase", {
+        const response = await fetch("https://aitosql.azurewebsites.net/AskTheDatabase", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
